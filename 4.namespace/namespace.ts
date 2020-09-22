@@ -2,12 +2,8 @@ namespace Utils {
   export function eat() {}
 }
 
-console.log(Utils);
+namespace Utils {
+  export function sleep() {}
+}
 
-// (function (Utils) {
-//   function sayHi() { }
-//   Utils.sayHi = sayHi;
-//   function eat() { }
-//   Utils.eat = eat;
-// })(Utils || (Utils = {}));
-// console.log(Utils);
+console.log(Utils);
